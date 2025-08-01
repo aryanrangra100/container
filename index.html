@@ -1,1 +1,108 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My GitHub Projects</h1>
+        <p>Below you'll find a collection of my work and contributions to open source</p>
+    </header>
+
+    <section class="profile">
+        <img src="https://placehold.co/400x400" alt="Professional portrait of developer with smiling expression" class="profile-pic">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm a passionate developer who loves building useful applications, contributing to open source, and sharing knowledge with the community. My projects span various technologies including JavaScript, Python, and more.</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>A responsive web application built with React and Node.js that solves problem X by doing Y.</p>
+                <div class="tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/project-one" target="_blank">View on GitHub</a>
+                    <a href="https://project-one-demo.com" target="_blank">Live Demo</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>A Python CLI tool for automating development workflows and boosting productivity.</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">CLI</span>
+                    <span class="tag">Automation</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/project-two" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Project Three</h3>
+                <p>A mobile-first web component library designed for accessibility and performance.</p>
+                <div class="tags">
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Web Components</span>
+                    <span class="tag">CSS</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/project-three" target="_blank">View on GitHub</a>
+                    <a href="https://npmjs.com/package/project-three" target="_blank">npm Package</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Project Four</h3>
+                <p>An open-source contribution to [Popular Project] adding feature X that improves Y.</p>
+                <div class="tags">
+                    <span class="tag">Open Source</span>
+                    <span class="tag">Contribution</span>
+                    <span class="tag">Community</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/org/project/pull/123" target="_blank">View PR</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© <span id="current-year"></span> My GitHub Projects</p>
+        <p style="margin-top: 0.5rem;">Built with ❤️ and open source</p>
+    </footer>
+
+    <script>
+        // Update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Add event listeners for project cards to animate on hover
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.zIndex = 10;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.zIndex = 1;
+            });
+        });
+    </script>
+</body>
+</html>
